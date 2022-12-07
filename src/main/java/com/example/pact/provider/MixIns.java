@@ -9,10 +9,4 @@ public interface MixIns {
         @JsonValue
         String stringValue();
     }
-
-    interface FullNameMixIn {
-
-        @JsonValue
-        String stringValue();
-    }
 }

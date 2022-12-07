@@ -20,6 +20,6 @@ class CustomerStateHandler implements StateHandler {
                 .thenReturn(Optional.of(
                         new Customer(
                                 new CustomerId("1"),
-                                new Name("John Snow"))));
+                                new FullName("John", "Snow"))));
     }
 }

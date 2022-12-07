@@ -19,8 +19,7 @@ public class ProviderApplication {
 		@Bean
 		Jackson2ObjectMapperBuilderCustomizer objectMapperBuilderCustomizer() {
 			return builder -> builder
-					.mixIn(CustomerId.class, MixIns.CustomerIdMixIn.class)
-					.mixIn(Name.class, MixIns.FullNameMixIn.class);
+					.mixIn(CustomerId.class, MixIns.CustomerIdMixIn.class);
 		}
 	}
 }

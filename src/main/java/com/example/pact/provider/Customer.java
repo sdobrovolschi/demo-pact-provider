@@ -5,19 +5,19 @@ import java.util.Objects;
 public final class Customer {
 
     private final CustomerId customerId;
-    private final Name name;
+    private final FullName fullName;
 
-    public Customer(CustomerId customerId, Name name) {
+    public Customer(CustomerId customerId, FullName fullName) {
         this.customerId = customerId;
-        this.name = name;
+        this.fullName = fullName;
     }
 
     public CustomerId getCustomerId() {
         return customerId;
     }
 
-    public Name getName() {
-        return name;
+    public FullName getFullName() {
+        return fullName;
     }
 
     @Override
