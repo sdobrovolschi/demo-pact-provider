@@ -20,6 +20,10 @@ public final class FullName {
         return lastName;
     }
 
+    public String stringValue() {
+        return "%s %s".formatted(firstName, lastName);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {

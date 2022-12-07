@@ -20,6 +20,11 @@ public final class Customer {
         return fullName;
     }
 
+    @Deprecated
+    public String getName() {
+        return fullName.stringValue();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
