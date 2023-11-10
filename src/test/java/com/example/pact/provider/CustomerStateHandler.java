@@ -22,4 +22,12 @@ class CustomerStateHandler implements StateHandler {
                                 new CustomerId("1"),
                                 new FullName("John", "Snow"))));
     }
+
+    @Autowired
+    RabbitEventPublisher eventPublisher;
+
+    @State("John Snow customer is created")
+    void customerIsCreated() {
+        eventPublisher.publish(new CustomerCreated("1", "John Snow"));
+    }
 }
